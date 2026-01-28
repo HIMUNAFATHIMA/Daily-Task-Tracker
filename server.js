@@ -10,7 +10,7 @@ app.use(express.static("public"));
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Fathima@2121",
+    password: "",
     database: "task_manager"
 });
 
@@ -38,3 +38,4 @@ app.post("/add-task", (req, res) => {
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
+
