@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Task Manager</h1>
+    <p class="subtitle">Organize your tasks efficiently</p>
+
+    <form action="/add-task" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <textarea name="task" placeholder="Describe your task..." required></textarea>
+
+        <select name="priority" required>
+            <option value="">Select Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <select name="status">
+  <option value="Pending">Pending</option>
+  <option value="Completed">Completed</option>
+</select>
+
+
+        <button type="submit">Add Task</button>
+    </form>
+</div>
+
+</body>
+</html>
